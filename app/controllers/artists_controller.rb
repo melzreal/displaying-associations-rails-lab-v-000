@@ -1,6 +1,6 @@
 class ArtistsController < ApplicationController
   def index
-
+    binding.pru
      @artists = Artist.all
   end
 
@@ -49,7 +49,6 @@ class ArtistsController < ApplicationController
   def self.song_count
       @artist = Artist.find(params[:id])
       @artists.songs.all.count
-
   end
 
   private
