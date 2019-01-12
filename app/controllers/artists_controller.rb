@@ -47,7 +47,7 @@ class ArtistsController < ApplicationController
   end
 
   def song_count
-      @artist = self
+      @artist = Artist.find(params[:id])
       @artist.songs.count
   end
 
