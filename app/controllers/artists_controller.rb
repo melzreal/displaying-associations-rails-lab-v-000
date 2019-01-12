@@ -45,10 +45,7 @@ class ArtistsController < ApplicationController
     redirect_to artists_path
   end
 
-  def song_count
-      @artist = Artist.find(params[:id])
-      @artist.songs.count
-  end
+
 
   private
 
